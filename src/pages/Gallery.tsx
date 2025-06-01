@@ -1,13 +1,13 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 
-const galleryImages = [
-  "./assets/1.jpg",
-  "./assets/2.jpg",
-  "/assets/3.jpg",
-  "/assets/4.jpg",
-  "/assets/5.jpg",
-  "/assets/6.jpg",
-];
+import img1 from "../assets/1.jpg";
+import img2 from "../assets/2.jpg";
+import img3 from "../assets/3.jpg";
+import img4 from "../assets/4.jpg";
+import img5 from "../assets/5.jpg";
+import img6 from "../assets/6.jpg";
+
+const galleryImages = [img1, img2, img3, img4, img5, img6];
 
 const Gallery = () => {
   return (
@@ -30,7 +30,7 @@ const Gallery = () => {
           <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
             <Box
               component='img'
-              src={`url('${src}')`}
+              src={`${src}`}
               alt={`Gallery ${index + 1}`}
               sx={{
                 width: "100%",
