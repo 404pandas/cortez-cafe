@@ -1,11 +1,28 @@
-/* Global Dark Mode Styling for Cortez Cafe */
-
 :root {
+  /* Brand Color Palette */
+  --color-jet: #010302;
+  --color-driftwood: #dadad2;
+  --color-blue: #0078b7;
+  --color-harbor: #122949;
+  --color-gold: #f2c800;
+
+  /* Neutral Theme Colors */
+  --bg-main: #1a1d1f;
+  --bg-card: #1e1e1e;
+  --text-main: var(--color-driftwood);
+  --text-dark: var(--color-jet);
+  --accent-link: #66b9e3;
+  --accent-link-hover: #91dcff;
+  --divider: #33475b;
+  --scroll-thumb: #333;
+  --scroll-thumb-hover: #444;
+
+  /* Font Settings */
   font-family: "Segoe UI", Roboto, sans-serif;
   font-weight: 400;
-  color-scheme: dark;
-  background-color: #121212;
-  color: #f3f3f3;
+  color-scheme: light dark;
+  background-color: var(--bg-main);
+  color: var(--text-main);
   line-height: 1.6;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,18 +32,18 @@
 
 body {
   margin: 0;
-  background-color: #121212;
-  color: #f3f3f3;
+  background-color: var(--bg-main);
+  color: var(--text-main);
   min-height: 100vh;
 }
 
 a {
-  color: #a8cfff;
+  color: var(--accent-link);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 a:hover {
-  color: #d0e3ff;
+  color: var(--accent-link-hover);
 }
 
 h1,
@@ -35,8 +52,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ffffff;
-  font-weight: 600;
+  color: var(--color-gold);
+  font-weight: 700;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -44,12 +61,10 @@ h6 {
 p,
 span,
 li {
-  p {
-    color: #ffffff !important;
-    line-height: 1.8;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-  }
+  color: var(--text-main);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 button {
@@ -58,56 +73,57 @@ button {
   font-size: 1rem;
   font-weight: 500;
   font-family: inherit;
-  color: #fff;
-  background-color: #2a2a2a;
-  border: 1px solid #444;
+  color: var(--text-dark);
+  background-color: var(--color-gold);
+  border: 1px solid #d1b800;
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
 }
 button:hover {
-  background-color: #333;
-  border-color: #888;
+  background-color: #e0b700;
+  border-color: #bca300;
 }
 button:focus,
 button:focus-visible {
-  outline: 3px solid #88aaff;
+  outline: 3px solid var(--color-blue);
 }
 
 /* MUI Container Enhancements */
 .MuiContainer-root {
-  background-color: #1d1d1d;
+  background-color: var(--color-harbor);
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Card styling (used for menu/reviews) */
+/* Card styling */
 .MuiCard-root {
-  background-color: #1e1e1e !important;
+  background-color: var(--bg-card) !important;
   border: 1px solid #333;
+  color: var(--text-main);
 }
 
 .MuiTypography-root {
-  color: #eaeaea;
+  color: var(--text-main);
 }
 
 .MuiDivider-root {
-  background-color: #444;
+  background-color: var(--divider);
 }
 
-/* Custom scrollbar */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #121212;
 }
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: var(--scroll-thumb);
   border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #444;
+  background: var(--scroll-thumb-hover);
 }
 
 /* Responsive typography */
@@ -164,14 +180,20 @@ h3 {
 }
 
 .text-muted {
-  color: #999;
+  color: #a0a0a0;
 }
 
 .bg-primary {
-  background-color: #1d1d1d;
+  background-color: var(--color-blue);
+  color: #ffffff;
 }
 
 .border-light {
-  border: 1px solid #444;
+  border: 1px solid var(--divider);
   border-radius: 6px;
+}
+
+.button {
+  background-color: var(--color-gold) !important;
+  color: var(--text-dark) !important;
 }

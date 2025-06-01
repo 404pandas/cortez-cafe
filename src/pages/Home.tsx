@@ -9,22 +9,45 @@ const Home = () => {
       {/* Hero Section */}
       <Box
         sx={{
-          backgroundImage: `url(${hero})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          position: "relative",
           height: "60vh",
           borderRadius: 3,
+          overflow: "hidden",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          color: "#fff",
           textAlign: "center",
           boxShadow: 3,
-          p: 4,
         }}
-        className='hero-section'
       >
-        <Box>
+        {/* Background Image Layer */}
+        <Box
+          sx={{
+            position: "absolute",
+            inset: 0,
+            backgroundImage: `url(${hero})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            filter: "grayscale(100%) brightness(0.8)",
+            transition: "filter 0.5s ease",
+            zIndex: 1,
+            "&:hover": {
+              filter: "grayscale(0%) brightness(1)",
+            },
+          }}
+          className='hero-image-layer'
+        />
+
+        {/* Overlay Content */}
+        <Box
+          sx={{
+            position: "relative",
+            zIndex: 2,
+            backgroundColor: "rgba(0, 0, 0, 0.6)",
+            p: 4,
+            borderRadius: 2,
+          }}
+        >
           <Typography
             variant='h2'
             component='h1'
@@ -42,13 +65,17 @@ const Home = () => {
             to='/menu'
             variant='contained'
             color='secondary'
-            sx={{ mt: 4, px: 4, py: 1.5, fontSize: "1rem" }}
+            sx={{
+              mt: 4,
+              px: 4,
+              py: 1.5,
+              fontSize: "1rem",
+            }}
           >
             View Menu
           </Button>
         </Box>
       </Box>
-
       {/* About Snippet */}
       <Box sx={{ mt: 10, textAlign: "center" }}>
         <Typography variant='h4' gutterBottom>
@@ -60,11 +87,16 @@ const Home = () => {
           home-cooked meals. Whether you're starting your day with a hearty
           breakfast or stopping in for lunch, you'll feel right at home.
         </Typography>
-        <Button component={Link} to='/about' variant='outlined' sx={{ mt: 3 }}>
+        <Button
+          className='button'
+          component={Link}
+          to='/about-us'
+          variant='outlined'
+          sx={{ mt: 3 }}
+        >
           Learn More
         </Button>
       </Box>
-
       {/* Gallery Teaser */}
       <Box sx={{ mt: 12, textAlign: "center" }}>
         <Typography variant='h4' gutterBottom>

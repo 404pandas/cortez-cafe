@@ -53,7 +53,7 @@ const Contact = () => {
               referrerPolicy='no-referrer-when-downgrade'
               src={`https://www.google.com/maps/embed/v1/place?key=${
                 import.meta.env.VITE_GOOGLE_MAPS_API_KEY
-              }&q=12108+Cortez+Rd+W,Cortez,FL+34215`}
+              }&q=12108+Cortez+Rd+W,Cortez,FL+34215&zoom=17`}
             />
           </Box>
         </Grid>

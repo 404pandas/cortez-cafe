@@ -10,54 +10,161 @@ import {
 const menuData = {
   breakfast: [
     {
-      name: "4-Egg Omelet",
+      name: "Cortez Omelet",
       description:
-        "Stuffed with cheese, onions, peppers, and your choice of ham, bacon, or sausage.",
-      price: "$10.99",
+        "Ham, bacon, sausage, onions, peppers, mushrooms, tomatoes, and cheese.",
+      price: "$8.95",
     },
     {
-      name: "Buttermilk Pancakes",
-      description: "Fluffy pancakes served with maple syrup and butter.",
-      price: "$7.99",
+      name: "Philly Cheese Steak Omelet",
+      description: "Roast beef, peppers, onions, mushrooms, and Swiss cheese.",
+      price: "$7.75",
     },
     {
-      name: "Country Breakfast",
+      name: "Veggie Omelet",
+      description: "Mushrooms, onions, peppers, tomatoes, and cheese.",
+      price: "$7.25",
+    },
+    {
+      name: "Greek Omelet",
+      description: "Feta cheese, spinach, and tomatoes.",
+      price: "$7.50",
+    },
+    {
+      name: "Pancake Special",
+      description: "Large pancake, 2 eggs, 2 sausage or 4 bacon.",
+      price: "$7.50",
+    },
+    {
+      name: "Belgian Waffle",
       description:
-        "Two eggs, toast, home fries, and your choice of bacon or sausage.",
-      price: "$9.49",
+        "Banana nut, blueberry, strawberry, or pecan, topped with whipped cream.",
+      price: "$5.50",
+    },
+    {
+      name: "French Toast",
+      description: "Two slices of Texas toast with cinnamon and vanilla.",
+      price: "$5.00",
+    },
+    {
+      name: "Cortez Muffin",
+      description:
+        "Fried egg, bacon, sausage or ham & cheese on a grilled English muffin.",
+      price: "$3.50",
+    },
+    {
+      name: "Breakfast Burrito",
+      description:
+        "Eggs scrambled with peppers, onion, cheese, and choice of meat (ham, bacon, or sausage) wrapped in a tortilla. Served with potatoes or grits, and a side of salsa or sour cream.",
+      price: "$7.95",
+    },
+    {
+      name: "Hungry Man",
+      description:
+        "3 eggs, a 1/2 order of biscuits and sausage gravy. Served with potatoes or grits.",
+      price: "$7.95",
     },
   ],
   lunch: [
     {
-      name: "Angus Burger",
-      description:
-        "Grilled to order with lettuce, tomato, and your choice of cheese.",
-      price: "$11.99",
+      name: "Fish Hoagie",
+      description: "Fried, blackened, or grilled fish hoagie.",
+      price: "$8.50",
     },
     {
-      name: "Chicken Salad Sandwich",
-      description: "House-made chicken salad on toasted sourdough.",
-      price: "$9.99",
+      name: "Philly Cheese Steak",
+      description:
+        "Roast beef, grilled onions, peppers, mushrooms, and Swiss cheese.",
+      price: "$8.75",
     },
     {
-      name: "Grilled Reuben",
+      name: "Pressed Cuban",
+      description: "Pressed pork, ham, salami & cheese with a special sauce.",
+      price: "$7.95",
+    },
+    {
+      name: "Tuna Melt",
+      description: "Tuna salad & Swiss cheese on grilled rye.",
+      price: "$7.25",
+    },
+    {
+      name: "Classic Reuben",
       description:
-        "Classic Reuben with corned beef, Swiss, sauerkraut, and Russian dressing.",
-      price: "$10.99",
+        "Corned beef, sauerkraut & Swiss with a special sauce on grilled rye.",
+      price: "$8.75",
+    },
+    {
+      name: "Chicken Quesadilla",
+      description:
+        "Grilled chicken, bell peppers, onions, and cheese in a tortilla.",
+      price: "$8.00",
+    },
+    {
+      name: "Gyro Wrap",
+      description: "Gyro meat with tomatoes, onions & tzatziki.",
+      price: "$8.50",
+    },
+    {
+      name: "Greek Chicken and Feta Wrap",
+      description:
+        "Marinated grilled chicken with feta, lettuce, tomatoes, onion & Greek dressing.",
+      price: "$7.75",
+    },
+    {
+      name: "Big Boy Burger",
+      description:
+        "Burger topped with ham, Swiss, onion rings & BBQ sauce on a burger bun.",
+      price: "$8.95",
+    },
+    {
+      name: "Cortez Burger",
+      description:
+        "Burger topped with grilled onions & Swiss on grilled Texas toast.",
+      price: "$8.50",
     },
   ],
   specials: [
     {
-      name: "Fried Grouper Sandwich",
+      name: "Lin's Special",
       description:
-        "Locally caught grouper, lightly breaded and served with fries.",
-      price: "$13.99",
+        "Grilled marinated chicken breast, feta, grilled spinach, onions, mushrooms & tomatoes.",
+      price: "$8.50",
     },
     {
-      name: "Greek Platter",
+      name: "Handmade Fish Fingers & Fries",
+      description: "Freshly made fish fingers served with fries.",
+      price: "$8.50",
+    },
+    {
+      name: "Jumbo Clam Strips & Fries",
+      description: "Generous portion of clam strips served with fries.",
+      price: "$8.50",
+    },
+    {
+      name: "Chili Cheese Dog & Fries",
+      description: "Hot dog topped with chili and cheese, served with fries.",
+      price: "$6.50",
+    },
+    {
+      name: "Home-Made Chicken Tenders & Fries",
+      description: "Homemade chicken tenders served with fries.",
+      price: "$8.50",
+    },
+    {
+      name: "Greek Salad with Grilled Chicken",
+      description: "Fresh Greek salad topped with grilled chicken.",
+      price: "$6.95",
+    },
+    {
+      name: "Tuna or Chicken Salad Cold Plate",
       description:
-        "Gyro meat, pita, hummus, and Greek salad with homemade tzatziki.",
-      price: "$14.99",
+        "Stuffed tomato on lettuce, with cottage cheese & fresh fruit.",
+      price: "$7.95",
+    },
+    {
+      name: "Fabulous Fresh Fruit Plate",
+      description: "Fruit, cottage cheese & sliced tomatoes on lettuce.",
+      price: "$6.75",
     },
   ],
 };
