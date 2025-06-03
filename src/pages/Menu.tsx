@@ -5,7 +5,12 @@ import {
   Typography,
   Grid,
   Paper,
+  Button,
+  Stack,
+  Fade,
 } from "@mui/material";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import { useEffect, useState } from "react";
 
 const menuData = {
   breakfast: [
@@ -172,11 +177,13 @@ const menuData = {
 const MenuSection = ({
   title,
   items,
+  id,
 }: {
   title: string;
   items: typeof menuData.breakfast;
+  id: string;
 }) => (
-  <Box sx={{ mb: 6 }}>
+  <Box id={id} sx={{ mb: 6 }}>
     <Typography variant='h4' gutterBottom>
       {title}
     </Typography>
@@ -206,6 +213,23 @@ const MenuSection = ({
 );
 
 const Menu = () => {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <Container maxWidth='lg' sx={{ py: 8 }}>
       <Typography variant='h3' align='center' gutterBottom>
@@ -215,9 +239,52 @@ const Menu = () => {
         Everything is made fresh, from scratch, and served with a smile.
       </Typography>
 
-      <MenuSection title='Breakfast' items={menuData.breakfast} />
-      <MenuSection title='Lunch' items={menuData.lunch} />
-      <MenuSection title='House Specials' items={menuData.specials} />
+      {/* Jump Links */}
+      <Stack direction='row' spacing={2} justifyContent='center' sx={{ mb: 4 }}>
+        <Button variant='outlined' onClick={() => scrollTo("breakfast")}>
+          Breakfast
+        </Button>
+        <Button variant='outlined' onClick={() => scrollTo("lunch")}>
+          Lunch
+        </Button>
+        <Button variant='outlined' onClick={() => scrollTo("specials")}>
+          Specials
+        </Button>
+      </Stack>
+
+      {/* Menu Sections */}
+      <MenuSection
+        title='Breakfast'
+        items={menuData.breakfast}
+        id='breakfast'
+      />
+      <MenuSection title='Lunch' items={menuData.lunch} id='lunch' />
+      <MenuSection
+        title='House Specials'
+        items={menuData.specials}
+        id='specials'
+      />
+
+      {/* Back to Top */}
+      <Fade in={showScrollTop}>
+        <Box
+          sx={{
+            position: "fixed",
+            bottom: 16,
+            right: 16,
+            zIndex: 1000,
+          }}
+        >
+          <Button
+            variant='contained'
+            color='primary'
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            startIcon={<KeyboardArrowUpIcon />}
+          >
+            Top
+          </Button>
+        </Box>
+      </Fade>
     </Container>
   );
 };
