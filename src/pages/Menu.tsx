@@ -13,6 +13,7 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { useEffect, useState } from "react";
 
 import menuData from "../data/menu.json";
+import MenuImg from "../components/MenuImg/MenuImg";
 
 const MenuSection = ({
   title,
@@ -117,7 +118,7 @@ const Menu = () => {
           Specials
         </Button>
       </Stack>
-
+      <MenuImg />
       {/* Menu Sections */}
       <MenuSection
         title='Breakfast'
