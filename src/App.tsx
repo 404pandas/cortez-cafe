@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import { Outlet } from "react-router-dom";
 
 import Nav from "./components/Nav/Nav";
@@ -8,13 +9,13 @@ import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
-    <>
+    <Box sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       <Nav />
-      <main>
+      <Box component="main" sx={{ flex: 1 }}>
         <Outlet />
-      </main>
+      </Box>
       <Footer />
-    </>
+    </Box>
   );
 }
 

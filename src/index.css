@@ -1,199 +1,58 @@
 :root {
-  /* Brand Color Palette */
   --color-jet: #010302;
   --color-driftwood: #dadad2;
   --color-blue: #0078b7;
   --color-harbor: #122949;
+  --color-harbor-dark: #0d1b2a;
   --color-gold: #f2c800;
-
-  /* Neutral Theme Colors */
   --bg-main: #1a1d1f;
-  --bg-card: #1e1e1e;
-  --text-main: var(--color-driftwood);
-  --text-dark: var(--color-jet);
-  --accent-link: #66b9e3;
-  --accent-link-hover: #91dcff;
-  --divider: #33475b;
-  --scroll-thumb: #333;
-  --scroll-thumb-hover: #444;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Lato", "Segoe UI", Roboto, sans-serif;
+}
 
-  /* Font Settings */
-  font-family: "Segoe UI", Roboto, sans-serif;
-  font-weight: 400;
-  color-scheme: light dark;
-  background-color: var(--bg-main);
-  color: var(--text-main);
-  line-height: 1.6;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   background-color: var(--bg-main);
-  color: var(--text-main);
+  color: var(--color-driftwood);
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-}
-
-a {
-  color: var(--accent-link);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-a:hover {
-  color: var(--accent-link-hover);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--color-gold);
-  font-weight: 700;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-p,
-span,
-li {
-  color: var(--text-main);
-  line-height: 1.8;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
-
-button {
-  border-radius: 6px;
-  padding: 0.6em 1.4em;
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: inherit;
-  color: var(--text-dark);
-  background-color: var(--color-gold);
-  border: 1px solid #d1b800;
-  cursor: pointer;
-  transition: background-color 0.3s, border-color 0.3s;
-}
-button:hover {
-  background-color: #e0b700;
-  border-color: #bca300;
-}
-button:focus,
-button:focus-visible {
-  outline: 3px solid var(--color-blue);
-}
-
-/* MUI Container Enhancements */
-.MuiContainer-root {
-  background-color: var(--color-harbor);
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* Card styling */
-.MuiCard-root {
-  background-color: var(--bg-card) !important;
-  border: 1px solid #333;
-  color: var(--text-main);
-}
-
-.MuiTypography-root {
-  color: var(--text-main);
-}
-
-.MuiDivider-root {
-  background-color: var(--divider);
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #121212;
+  background: var(--color-jet);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--scroll-thumb);
-  border-radius: 6px;
+  background: var(--color-harbor);
+  border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--scroll-thumb-hover);
+  background: var(--color-blue);
 }
 
-/* Responsive typography */
-h1 {
-  font-size: 2.4rem;
+/* Slick carousel */
+.slick-dots li button:before {
+  color: var(--color-gold) !important;
+  font-size: 10px !important;
 }
-h2 {
-  font-size: 2rem;
-}
-h3 {
-  font-size: 1.6rem;
-}
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  h3 {
-    font-size: 1.3rem;
-  }
-}
-
-/* Utility Classes */
-.text-center {
-  text-align: center;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-.mt-4 {
-  margin-top: 1rem;
-}
-.mt-6 {
-  margin-top: 1.5rem;
-}
-.mt-8 {
-  margin-top: 2rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-.mb-4 {
-  margin-bottom: 1rem;
-}
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.text-muted {
-  color: #a0a0a0;
-}
-
-.bg-primary {
-  background-color: var(--color-blue);
-  color: #ffffff;
-}
-
-.border-light {
-  border: 1px solid var(--divider);
-  border-radius: 6px;
-}
-
-.button {
-  background-color: var(--color-gold) !important;
-  color: var(--text-dark) !important;
+.slick-prev:before,
+.slick-next:before {
+  color: var(--color-gold) !important;
 }

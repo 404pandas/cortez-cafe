@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+import { Box } from "@mui/material";
 import Slider from "react-slick";
 
 import breakfast1 from "../../assets/breakfast.jpg";
@@ -7,45 +7,63 @@ import extra from "../../assets/extras.jpg";
 import lunch1 from "../../assets/lunch.jpg";
 import lunch2 from "../../assets/lunch2.jpg";
 
-// Sample images — replace with actual URLs or local image imports
-const images = [breakfast1, breakfast2, extra, lunch1, lunch2];
+const images = [
+  { src: breakfast1, alt: "Breakfast plates" },
+  { src: breakfast2, alt: "Morning favorites" },
+  { src: extra, alt: "Extras and sides" },
+  { src: lunch1, alt: "Lunch specials" },
+  { src: lunch2, alt: "Fresh lunch" },
+];
 
 const MenuImg = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
     arrows: true,
     responsive: [
       {
-        breakpoint: 768, // Mobile view
-        settings: {
-          arrows: false,
-        },
+        breakpoint: 768,
+        settings: { arrows: false },
       },
     ],
   };
 
   return (
-    <Container maxWidth='md' sx={{ py: 8 }}>
+    <Box
+      sx={{
+        maxWidth: 720,
+        mx: "auto",
+        mb: 8,
+        px: { xs: 0, sm: 2 },
+        borderRadius: 3,
+        overflow: "hidden",
+        boxShadow: "0 12px 40px rgba(0,0,0,0.5)",
+      }}
+    >
       <Slider {...settings}>
-        {images.map((src, i) => (
-          <img
-            key={i}
-            src={src}
-            alt={`Menu item ${i + 1}`}
-            style={{
-              width: "40% !important",
-              height: "auto",
-              borderRadius: "16px",
-              objectFit: "cover",
-            }}
-          />
+        {images.map(({ src, alt }, i) => (
+          <Box key={i}>
+            <Box
+              component="img"
+              src={src}
+              alt={alt}
+              sx={{
+                width: "100%",
+                height: { xs: 240, sm: 340, md: 420 },
+                objectFit: "cover",
+                display: "block",
+              }}
+            />
+          </Box>
         ))}
       </Slider>
-    </Container>
+    </Box>
   );
 };
 

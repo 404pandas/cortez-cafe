@@ -1,344 +1,576 @@
 {
-  "breakfast": [
-    {
-      "name": "Cortez Omelet",
-      "description": "Ham, bacon, sausage, onions, peppers, mushrooms, tomatoes, and cheese.",
-      "price": "$14.50"
-    },
-    {
-      "name": "Philly Cheese Steak Omelet",
-      "description": "Roast beef, peppers, onions, mushrooms, and Swiss cheese.",
-      "price": "$13.50"
-    },
-    {
-      "name": "Veggie Omelet",
-      "description": "Mushrooms, onions, peppers, tomatoes, and cheese.",
-      "price": "$11.50"
-    },
-    {
-      "name": "Greek Omelet",
-      "description": "Feta cheese, spinach, and tomatoes.",
-      "price": "$12.50"
-    },
-    {
-      "name": "Spanish Omelet",
-      "description": "Salsa, onions, tomatoes, and peppers.",
-      "price": "11.95"
-    },
-    {
-      "name": "Bacon or Sausage and Cheese Omelet",
-      "description": "Bacon or sausage with cheese.",
-      "price": "$12.50"
-    },
-    {
-      "name": "Bacon, Tomato, and Swiss Omelet",
-      "description": "Bacon, tomatoes, and Swiss cheese.",
-      "price": "$12.50"
-    },
-    {
-      "name": "Western Omelet",
-      "description": "Ham, peppers, onions, and cheese.",
-      "price": "$12.95"
-    },
-    {
-      "name": "Sausage, Swiss, and Mushroom Omelet",
-      "description": "Sausage, Swiss cheese, and mushrooms.",
-      "price": "$12.95"
-    },
-    {
-      "name": "Ham and Cheese Omelet",
-      "description": "Ham with cheese.",
-      "price": "$12.50"
-    },
-    {
-      "name": "Pancake Special",
-      "description": "Large pancake, 2 eggs, 2 sausage or 4 bacon. Additional toppings $2.00 each.",
-      "price": "$13.95"
-    },
-    {
-      "name": "Large Pancake (Plate size)",
-      "description": "A large pancake served plain.",
-      "price": "$7.50"
-    },
-    {
-      "name": "Large Pancake (Plate size) One Topping",
-      "description": "A large pancake with one topping of your choice- blueberry, banana nut, or chocolate chip.",
-      "price": "$9.50"
-    },
-    {
-      "name": "Pancake Short Stack",
-      "description": "Two pancakes served plain.",
-      "price": "$7.50"
-    },
-    {
-      "name": "Sand Dollar Pancakes",
-      "description": "Ten silver dollar pancakes served plain.",
-      "price": "$6.50"
-    },
-    {
-      "name": "Belgian Waffle All The Way",
-      "description": "Banana nut, blueberry, or strawberry, topped with whipped cream.",
-      "price": "$11.95"
-    },
-    {
-      "name": "Belgian Waffle Plain",
-      "description": "A classic Belgian waffle served plain.",
-      "price": "$7.95"
-    },
-    {
-      "name": "Belgian Waffle One Toping",
-      "description": "Banana nut, blueberry, or strawberry, topped with whipped cream.",
-      "price": "$7.95"
-    },
-    {
-      "name": "French Toast",
-      "description": "Two slices of Texas toast with cinnamon and vanilla.",
-      "price": "$8.95"
-    },
+  "notes": {
+    "omelets": "All omelets served with toast and your choice of hash browns, home fries, or grits. Substitute sliced tomatoes for potatoes, toast, or grits at no additional charge. Add diced tomatoes, onion, mushroom, peppers, cheese, spinach, or feta to any omelet for an additional $2.00 each.",
+    "sandwiches_burgers_wraps": "Unless specified, sandwiches, burgers, and wraps come with your choice of lettuce, tomato, onion, pickle, and mayo. Served with French fries or cottage cheese. Substitute onion rings or sweet potato fries for $1.95."
+  },
+
+  "breakfast_favorites": [
     {
       "name": "Eggs Benedict",
-      "description": "Two poached eggs on an English muffin with Canadian bacon and hollandaise sauce. Served with potatoes or grits.",
       "price": "$13.95"
     },
-
     {
       "name": "Breakfast Burrito",
-      "description": "Eggs scrambled with peppers, onion, cheese, and choice of meat (ham, bacon, or sausage) wrapped in a tortilla. Served with potatoes or grits, and a side of salsa or sour cream.",
       "price": "$12.50"
     },
     {
       "name": "Hungry Man",
-      "description": "3 eggs your way, a 1/2 order of biscuits and sausage gravy. Served with potatoes or grits.",
       "price": "$13.95"
     },
     {
       "name": "Cortez Scrambler",
-      "description": "4 eggs scrambled with potatos, peppers, onions, and your choice of ham, bacon, or sausage, topped with cheese. Served with toast.",
       "price": "$13.95"
     },
     {
       "name": "Polish Sausage",
-      "description": "2 eggs and grilled polish sasusage topped with sautéed onions and peppers. Served with toast.",
       "price": "$12.50"
     },
     {
       "name": "Country Fried Steak with Sausage Gravy",
-      "description": "Country fried steak topped with sausage gravy. Served with 2 eggs and potatoes, grits, or toast.",
       "price": "$13.95"
     },
     {
       "name": "SOS over Toast",
-      "description": "Sausage gravy served over toast.",
       "price": "$13.95"
     },
     {
       "name": "Full Biscuits & Homemade Sausage Gravy",
-      "description": "Homemade biscuits smothered in our homemade sausage gravy.",
       "price": "$10.95"
     },
     {
-      "name": "Half Biscuits & Homemade Sausage Gravy",
-      "description": "Half order of our homemade biscuit smothered in our homemade sausage gravy.",
+      "name": "Biscuits & Homemade Sausage Gravy (Half Order)",
       "price": "$8.95"
+    }
+  ],
+  "breakfast_omelets": [
+    {
+      "name": "Cortez Omelet",
+      "price": "$14.50"
     },
     {
-      "name": "Spam, 2 Eggs, and Toast",
-      "description": "Grilled spam served with 2 eggs and toast.",
+      "name": "Greek Omelet",
+      "price": "$12.50"
+    },
+    {
+      "name": "Spanish Omelet",
+      "price": "$11.95"
+    },
+    {
+      "name": "Bacon or Sausage and Cheese Omelet",
+      "price": "$12.50"
+    },
+    {
+      "name": "Bacon, Tomato, and Swiss Omelet",
+      "price": "$13.00"
+    },
+    {
+      "name": "Western Omelet",
+      "price": "$12.95"
+    },
+    {
+      "name": "Sausage, Swiss, and Mushroom Omelet",
+      "price": "$12.95"
+    },
+    {
+      "name": "Veggie Omelet",
+      "price": "$11.50"
+    },
+    {
+      "name": "Ham and Cheese Omelet",
+      "price": "$12.50"
+    },
+    {
+      "name": "Cheese Omelet",
+      "price": "$10.95"
+    },
+    {
+      "name": "Philly Cheese Steak Omelet",
+      "price": "$13.50"
+    }
+  ],
+  "breakfast_regulars": [
+    {
+      "name": "Spam, 2 Eggs and Toast",
       "price": "$9.00"
     },
     {
-      "name": "Ham, 2 Eggs, and Toast",
-      "description": "Grilled ham served with 2 eggs and toast.",
+      "name": "Ham, 2 Eggs and Toast",
       "price": "$10.00"
     },
     {
-      "name": "Bacon, 2 Eggs, and Toast",
-      "description": "Crispy bacon served with 2 eggs and toast.",
+      "name": "Bacon, 2 Eggs and Toast",
       "price": "$10.00"
     },
     {
-      "name": "Sausage, 2, and Toast",
-      "description": "Grilled sausage served with 2 eggs and toast.",
+      "name": "Sausage, 2 Eggs and Toast",
       "price": "$10.00"
     },
     {
       "name": "2 Eggs and Toast",
-      "description": "Two eggs cooked to your liking served with toast.",
       "price": "$6.00"
     },
     {
-      "name": "Pork chops, 2 Eggs, and Toast",
-      "description": "Grilled pork chops served with 2 eggs and toast.",
+      "name": "Pork Chops, 2 Eggs and Toast",
       "price": "$13.50"
     },
     {
-      "name": "Steak (6oz), 2 Eggs, and Toast",
-      "description": "Grilled steak served with 2 eggs and toast.",
+      "name": "Steak (6 oz), 2 Eggs and Toast",
       "price": "$14.50"
     },
     {
-      "name": "Corn beef hash, 2 Eggs, and Toast",
-      "description": "Corned beef hash served with 2 eggs and toast.",
+      "name": "Corn Beef Hash, 2 Eggs and Toast",
       "price": "$10.95"
     },
     {
       "name": "Cortez Muffin",
-      "description": "English muffin with ham, bacon, or sausage, topped with a fried egg and cheese.",
       "price": "$6.50"
     },
     {
       "name": "Cortez Bagel",
-      "description": "Bagel with ham, bacon, or sausage, topped with a fried egg and cheese.",
       "price": "$7.50"
     },
     {
       "name": "Eggs BLT",
-      "description": "Two eggs, crispy bacon, lettuce, and tomato on toasted bread.",
       "price": "$11.00"
-    },
+    }
+  ],
+  "breakfast_lighter": [
     {
       "name": "Breakfast Sundae",
-      "description": "Fresh fruit topped with yogurt and granola. Served with a warm muffin.",
       "price": "$10.95"
     },
     {
       "name": "Protein Wrap",
-      "description": "Egg whites, turkey, mushrooms, swiss, and spinach wrapped in a tortilla. Served with fresh fruit.",
       "price": "$11.95"
     },
     {
-      "name": "Oatmeal Bowl",
-      "description": "Served with brown sugar and raisins.",
-      "price": "$4.95"
+      "name": "Oatmeal w/Brown Sugar & Raisins",
+      "price": "Cup $3.95 / Bowl $4.95"
     },
     {
-      "name": "Oatmeal Cup",
-      "description": "Served with brown sugar and raisins.",
-      "price": "$3.95"
+      "name": "Yogurt (Strawberry, Blueberry, or Vanilla)",
+      "price": "Cup $3.00 / Bowl $4.00"
     },
     {
-      "name": "Yogurt Bowl",
-      "description": "Your choice of strawberry, blueberry, or vanilla.",
-      "price": "$4.00"
-    },
-    {
-      "name": "Yogurt Cup",
-      "description": "Your choice of strawberry, blueberry, or vanilla.",
-      "price": "$3.00"
-    },
-    {
-      "name": "Fruit Bowl",
-      "description": "Seasonal fruit in a bowl.",
-      "price": "$4.00"
-    },
-    {
-      "name": "Fruit Cup",
-      "description": "Seasonal fruit in a cup.",
-      "price": "$3.00"
+      "name": "Fresh Fruit (Seasonal)",
+      "price": "Cup $3.50 / Bowl $4.50"
     },
     {
       "name": "Muffins",
-      "description": "Freshly baked muffins. Ask about today's flavors.",
       "price": "$3.50"
     },
     {
       "name": "Danishes",
-      "description": "Freshly baked danishes. Ask about today's flavors.",
       "price": "$4.50"
     }
   ],
-  "lunch": [
+  "breakfast_sweets": [
     {
-      "name": "Fish Hoagie",
-      "description": "Fried, blackened, or grilled fish hoagie.",
-      "price": "$8.50"
+      "name": "Pancake Special",
+      "price": "$13.95"
     },
     {
-      "name": "Philly Cheese Steak",
-      "description": "Roast beef, grilled onions, peppers, mushrooms, and Swiss cheese.",
-      "price": "$8.75"
-    },
-    {
-      "name": "Pressed Cuban",
-      "description": "Pressed pork, ham, salami & cheese with a special sauce.",
+      "name": "Belgian Waffle — Plain",
       "price": "$7.95"
     },
     {
-      "name": "Tuna Melt",
-      "description": "Tuna salad & Swiss cheese on grilled rye.",
-      "price": "$7.25"
+      "name": "Belgian Waffle — One Topping",
+      "price": "$9.95"
     },
     {
-      "name": "Classic Reuben",
-      "description": "Corned beef, sauerkraut & Swiss with a special sauce on grilled rye.",
-      "price": "$8.75"
+      "name": "Belgian Waffle — All The Way",
+      "price": "$11.95"
     },
     {
-      "name": "Chicken Quesadilla",
-      "description": "Grilled chicken, bell peppers, onions, and cheese in a tortilla.",
-      "price": "$8.00"
+      "name": "Large Pancake (Plate Size)",
+      "price": "$7.50"
     },
     {
-      "name": "Gyro Wrap",
-      "description": "Gyro meat with tomatoes, onions & tzatziki.",
-      "price": "$8.50"
+      "name": "Large Pancake — One Topping",
+      "price": "$9.50"
     },
     {
-      "name": "Greek Chicken and Feta Wrap",
-      "description": "Marinated grilled chicken with feta, lettuce, tomatoes, onion & Greek dressing.",
-      "price": "$7.75"
+      "name": "Short Stack (2 pancakes)",
+      "price": "$7.50"
     },
     {
-      "name": "Big Boy Burger",
-      "description": "Burger topped with ham, Swiss, onion rings & BBQ sauce on a burger bun.",
-      "price": "$8.95"
-    },
-    {
-      "name": "Cortez Burger",
-      "description": "Burger topped with grilled onions & Swiss on grilled Texas toast.",
-      "price": "$8.50"
-    }
-  ],
-  "specials": [
-    {
-      "name": "Lin's Special",
-      "description": "Grilled marinated chicken breast, feta, grilled spinach, onions, mushrooms & tomatoes.",
-      "price": "$8.50"
-    },
-    {
-      "name": "Handmade Fish Fingers & Fries",
-      "description": "Freshly made fish fingers served with fries.",
-      "price": "$8.50"
-    },
-    {
-      "name": "Jumbo Clam Strips & Fries",
-      "description": "Generous portion of clam strips served with fries.",
-      "price": "$8.50"
-    },
-    {
-      "name": "Chili Cheese Dog & Fries",
-      "description": "Hot dog topped with chili and cheese, served with fries.",
+      "name": "Sand Dollar Pancakes (10)",
       "price": "$6.50"
     },
     {
-      "name": "Home-Made Chicken Tenders & Fries",
-      "description": "Homemade chicken tenders served with fries.",
+      "name": "French Toast",
+      "price": "$8.95"
+    }
+  ],
+  "lunch_sandwiches": [
+    {
+      "name": "Fish Hoagie",
+      "price": "$14.95"
+    },
+    {
+      "name": "Philly Cheese Steak",
+      "price": "$13.95"
+    },
+    {
+      "name": "Chicken Philly",
+      "price": "$13.95"
+    },
+    {
+      "name": "Pressed Cuban",
+      "price": "$13.95"
+    },
+    {
+      "name": "Tuna Melt",
+      "price": "$12.95"
+    },
+    {
+      "name": "Classic Reuben",
+      "price": "$13.95"
+    },
+    {
+      "name": "Turkey Reuben",
+      "price": "$13.95"
+    },
+    {
+      "name": "French Dip",
+      "price": "$13.95"
+    },
+    {
+      "name": "Chicken Supreme",
+      "price": "$13.95"
+    },
+    {
+      "name": "Chicken Quesadilla",
+      "price": "$13.95"
+    }
+  ],
+  "lunch_burgers": [
+    {
+      "name": "Big Boy Burger",
+      "price": "$14.50"
+    },
+    {
+      "name": "Cortez Burger",
+      "price": "$12.95"
+    },
+    {
+      "name": "Mushroom Melt",
+      "price": "$12.95"
+    },
+    {
+      "name": "Hamburger",
+      "price": "$11.50"
+    },
+    {
+      "name": "Cheeseburger",
+      "price": "$12.50"
+    },
+    {
+      "name": "Bacon Cheeseburger",
+      "price": "$13.50"
+    },
+    {
+      "name": "Patty Melt",
+      "price": "$12.95"
+    },
+    {
+      "name": "Greek Burger",
+      "price": "$12.95"
+    }
+  ],
+  "lunch_platters": [
+    {
+      "name": "Lisa's Special",
+      "price": "$13.95"
+    },
+    {
+      "name": "Hand-made Fish Fingers & Fries",
+      "price": "$14.95"
+    },
+    {
+      "name": "Jumbo Clam Strips & Fries",
+      "price": "$13.95"
+    },
+    {
+      "name": "Hot Dog & Fries",
+      "price": "$9.50"
+    },
+    {
+      "name": "Chili Cheese Dog & Fries",
+      "price": "$10.50"
+    },
+    {
+      "name": "Hand-made Chicken Tenders & Fries",
+      "price": "$12.95"
+    }
+  ],
+  "lunch_clubs": [
+    {
+      "name": "BLT Club",
+      "price": "$13.95"
+    },
+    {
+      "name": "Turkey BLT Club",
+      "price": "$13.95"
+    },
+    {
+      "name": "Roast Beef Club",
+      "price": "$13.95"
+    },
+    {
+      "name": "Ham, Turkey BLT Club",
+      "price": "$13.95"
+    },
+    {
+      "name": "BLT",
+      "price": "$10.50"
+    },
+    {
+      "name": "Tuna or Chicken Salad Sandwich",
+      "price": "$10.50"
+    },
+    {
+      "name": "Ham & Cheese (Hot or Cold)",
+      "price": "$10.50"
+    },
+    {
+      "name": "Grilled Cheese",
+      "price": "$7.50"
+    },
+    {
+      "name": "Grilled Cheese & Tomato",
       "price": "$8.50"
     },
     {
-      "name": "Greek Salad with Grilled Chicken",
-      "description": "Fresh Greek salad topped with grilled chicken.",
+      "name": "Grilled Bacon, Cheese & Tomato",
+      "price": "$9.50"
+    },
+    {
+      "name": "Egg Salad",
+      "price": "$7.50"
+    },
+    {
+      "name": "Turkey & Cheese (Hot or Cold)",
+      "price": "$10.50"
+    }
+  ],
+  "lunch_wraps": [
+    {
+      "name": "Gyro Meat Wrap",
+      "price": "$13.95"
+    },
+    {
+      "name": "Grilled Chicken Gyro Wrap",
+      "price": "$13.95"
+    },
+    {
+      "name": "Greek Chicken and Feta Wrap",
+      "price": "$13.95"
+    },
+    {
+      "name": "Tuna or Chicken Salad Wrap",
+      "price": "$11.50"
+    }
+  ],
+  "lunch_soups_salads": [
+    {
+      "name": "Home-made Chili",
+      "price": "Cup $3.95 / Bowl $4.95"
+    },
+    {
+      "name": "Soup of the Day",
+      "price": "Cup $3.95 / Bowl $4.95"
+    },
+    {
+      "name": "Tossed Salad",
       "price": "$6.95"
     },
     {
+      "name": "Greek Salad",
+      "price": "$9.00"
+    },
+    {
+      "name": "Chef Salad",
+      "price": "$12.95"
+    },
+    {
+      "name": "Greek Spinach Pie and Greek Salad",
+      "price": "$12.95"
+    },
+    {
       "name": "Tuna or Chicken Salad Cold Plate",
-      "description": "Stuffed tomato on lettuce, with cottage cheese & fresh fruit.",
-      "price": "$7.95"
+      "price": "$13.95"
     },
     {
       "name": "Fabulous Fresh Fruit Plate",
-      "description": "Fruit, cottage cheese & sliced tomatoes on lettuce.",
+      "price": "$10.95"
+    }
+  ],
+  "kids": [
+    {
+      "name": "Mickey Mouse Pancake",
+      "price": "$4.00"
+    },
+    {
+      "name": "Mickey Mouse Pancake with Bacon or Sausage",
+      "price": "$6.25"
+    },
+    {
+      "name": "Egg-in-a-Basket",
+      "price": "$4.50"
+    },
+    {
+      "name": "Egg-in-a-Basket with Bacon or Sausage",
       "price": "$6.75"
+    },
+    {
+      "name": "1 Egg, 1 Bacon, 1 Toast",
+      "price": "$4.50"
+    },
+    {
+      "name": "Chicken Fingers & Fries",
+      "price": "$7.50"
+    },
+    {
+      "name": "Grilled Cheese & Fries",
+      "price": "$6.50"
+    }
+  ],
+  "sides": [
+    {
+      "name": "1 Egg",
+      "price": "$1.75"
+    },
+    {
+      "name": "Biscuit, Toast, or English Muffin",
+      "price": "$2.50"
+    },
+    {
+      "name": "Bagel",
+      "price": "$3.50"
+    },
+    {
+      "name": "Bagel & Cream Cheese",
+      "price": "$4.50"
+    },
+    { "name": "Hash Browns or Home Fries", "price": "$3.00" },
+    {
+      "name": "Grits",
+      "price": "Cup $2.50 / Bowl $3.50"
+    },
+    {
+      "name": "Homemade Sausage Gravy",
+      "price": "$3.50"
+    },
+    {
+      "name": "Sliced Tomatoes",
+      "price": "$2.00"
+    },
+    {
+      "name": "Banana (whole)",
+      "price": "$1.00"
+    },
+    {
+      "name": "Salsa",
+      "price": "$.95"
+    },
+    {
+      "name": "Peanut Butter",
+      "price": "$.95"
+    },
+    {
+      "name": "Apple Sauce",
+      "price": "$1.50"
+    },
+    {
+      "name": "Corn Beef Hash",
+      "price": "$4.50"
+    },
+    {
+      "name": "Pork Chops",
+      "price": "$7.50"
+    },
+    {
+      "name": "Steak (4 oz)",
+      "price": "$8.50"
+    },
+    {
+      "name": "Sausage Links or Patties",
+      "price": "$4.25"
+    },
+    {
+      "name": "Bacon",
+      "price": "$4.25"
+    },
+    {
+      "name": "Ham",
+      "price": "$4.25"
+    },
+    {
+      "name": "Grilled Pita Bread",
+      "price": "$3.00"
+    },
+    {
+      "name": "French Fries",
+      "price": "$3.00"
+    },
+    {
+      "name": "Onion Rings",
+      "price": "$3.95"
+    },
+    {
+      "name": "Sweet Potato Fries",
+      "price": "$3.95"
+    },
+    {
+      "name": "Cottage Cheese",
+      "price": "$2.50"
+    },
+    {
+      "name": "Tzatziki Sauce",
+      "price": "$2.50"
+    },
+    {
+      "name": "Tzatziki Bread and Pita",
+      "price": "$5.25"
+    },
+    {
+      "name": "Spinach Pie",
+      "price": "$7.00"
+    },
+    {
+      "name": "Hamburger Patty",
+      "price": "$7.00"
+    }
+  ],
+  "beverages": [
+    {
+      "name": "Coffee or Hot Tea",
+      "price": "$2.95"
+    },
+    {
+      "name": "Hot Chocolate",
+      "price": "$2.95"
+    },
+    {
+      "name": "Soda (Coke, Diet Coke, Sprite, Root Beer)",
+      "price": "$2.95"
+    },
+    {
+      "name": "Iced Tea (Sweet or Unsweet)",
+      "price": "$2.95"
+    },
+    {
+      "name": "Juice (Apple, Orange, Tomato, V8, Cranberry)",
+      "price": "$3.25"
+    },
+    {
+      "name": "Milk (Whole)",
+      "price": "$3.25"
+    },
+    {
+      "name": "Chocolate Milk",
+      "price": "$3.25"
     }
   ]
 }
